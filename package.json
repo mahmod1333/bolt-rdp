@@ -1,0 +1,32 @@
+{
+      "name": "remoteClient",
+      "version": "1.0.0",
+      "description": "",
+      "author": "",
+      "keywords": [],
+      "license": "ISC",
+      "main": "server/index.js",
+      "scripts": {
+        "start": "node server/index.js",
+        "dev": "npm run client:dev",
+        "client:dev": "cd client && npm run dev",
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "dependencies": {
+        "express": "^4.18.2",
+        "http-errors": "^2.0.0",
+        "nodemon": "^2.0.22",
+        "pino": "^8.11.0",
+        "pino-http": "^8.3.3",
+        "pino-pretty": "^10.0.0",
+        "socket.io": "^4.6.1"
+      },
+      "devDependencies": {
+        "@types/node": "^18.15.11",
+        "typescript": "^5.0.2",
+        "vite": "^4.3.9",
+        "@vitejs/plugin-react": "^4.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+      }
+    }

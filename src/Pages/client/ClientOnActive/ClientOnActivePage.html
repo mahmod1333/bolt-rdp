@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <link rel="stylesheet" href="../../src/Pages/client/ClientOnActive/css/ClientOnActiveStyle.css">
+    <link rel="stylesheet" href="../../src/Pages/client/ClientOnActive/css/virtualKeyboard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="c-act-container">
+        <div class="c-act-header">
+            <div class="controls">
+                <p>|</p>
+                <div class="content">
+
+                    <img src="../../src/img/icons8-select-cursor-24.png" id="act-mouse">
+                    <img src="../../src/img/keyboard_hide.png" id="act-keyboard" onclick="showKeybordBtnhandler()">
+                </div>
+                <p>|</p>
+
+            </div>
+            <div id="show-hide">
+                <img src="../../src/img/upload.png" id="show-hide-img">
+            </div>
+        </div>
+        <div class="c-act-body">
+            <div class="vde"><video id="remote-video" autoplay></video></div>
+
+        </div>
+        <div class="message">
+            <div onclick="togglePopup()" class="close-btn">
+                ×
+            </div>
+            <img class="load_img" src="../../src/img/image_processing20210903-9493-4e9y74.gif" alt="">
+            <p>Wait to get the PC</p>
+        </div>
+
+        <div class="keyboard_wrapp">
+            <div class="keyboard_lights"></div>
+            <div class="keyboard_keys">
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+ 
+
+    <!-- check https://peerjs.com/ for latest CDN-->
+    <script  src="../../src/lib/JQ.js"></script>
+    <script  src="../../src/lib/peerjs.js"></script>
+    <script src="../../src/Pages/client/ClientOnActive/js/Controles.Keyboard.js"></script>
+    <script src="../../src/Pages/client/ClientOnActive/js/keybord_ar.js"></script>
+    <script src="../../src/Pages/client/ClientOnActive/js/keybord_en.js"></script>
+    <script  src="../../src/Pages/client/ClientOnActive/js/WRTC.Client.js"></script>
+    <script  src="../../src/Pages/client/ClientOnActive/js/Script.ClientOnActivePage.js"></script>
+    <script  src="../../src/Pages/client/ClientOnActive/js/virtualkeyboard.js" defer></script>
+    <script src="../../src/Pages/client/ClientOnActive/js/mouseControler.js"></script>
+    
+    
+</body>
+
+</html>
